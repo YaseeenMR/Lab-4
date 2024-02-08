@@ -1,9 +1,9 @@
 <!--
 =========================================================
-Name        : index.html
+Name        : Responsive.html
 Assignment  : Lab 4 Exercise B
-Author(s)   : Mahdi Ansari, William Arthur Philip Louis
-Submission  : May 21, 2030
+Author(s)   : Yaseen Rashid, Asher Khan
+Submission  : February 7, 2024
 Description : Responsive Layouts.
 =========================================================
 -->
@@ -17,7 +17,7 @@ Description : Responsive Layouts.
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- First, link the menu.css file here -->
+	<link rel = "stylesheet" type="text/css" href="menu.css"/>
 
 	<style>	
 		/* Remove borders at the end, they have been add just for detecting positions of items*/	
@@ -48,38 +48,63 @@ Description : Responsive Layouts.
         .news-item { padding: 10px; }
 		
 		.row { 
-			/*I need some CSS codes.*/		
+			width: 100%;
+			overflow: hidden;
 		}
 
 		.large, .medium, .small {
-			/*I need some CSS codes.*/
+    		box-sizing: border-box;
+			float: left;
+
 		}
 		
 		.gap {
-			/*I need some CSS codes.*/
+			margin-top: 100px;
 		}
 
 		@media screen and (min-width: 769px) {			
 			.large { 
-				/*I need some CSS codes.*/
+				width: 100%;
 			}
 			.medium { 
-				/*I need some CSS codes.*/
+				width: 70%;
 			}
 			.small { 
-				/*I need some CSS codes.*/
+				width: 30%;
 			 }
 		}
 
         @media screen and (max-width: 768px) {
-            /*I need some CSS codes.*/
+            .large { 
+				width: 100%;
+			}
+			.medium { 
+				width: 60%;
+			}
+			.small { 
+				width: 40%;
+			}
+			.menu {
+				width: 100%;
+				padding: 10px;
+			}
+			.main {
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				margin-top: 60px;
+			}
+
         }
 
         @media screen and (max-width: 480px) {
-			/*I need some CSS codes.*/
+			.large, .small, .medium { 
+				width: 100%;
+			}
+			.container h1 {
+    			font-size: 18px;
+			}
         }
-
-        
     </style>
 </head>
 <body>
@@ -135,7 +160,7 @@ Description : Responsive Layouts.
 				<!-- Medium news item -->
 				<div class="medium news-item">
 					<header>
-						<h1>Mahdi Ansari Takes a Historic Spacewalk Near the ISS</h1>
+						<h1>Yaseen Rashid Takes a Historic Spacewalk Near the ISS</h1>
 					</header>
 					<img src="images/medium.jpg" alt="Medium Image">
 					<article>
